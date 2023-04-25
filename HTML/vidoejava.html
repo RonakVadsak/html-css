@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <style>
+        .button1{
+            display: flex;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button1">
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="big()">Big</button>
+        <button onclick="small()">Small</button>
+        <button onclick="normal()">Normal</button>
+    </div>
+    <div>
+        <video id="video1">
+            <source src="/videos/WhatsApp Video 2023-02-03 at 10.04.23.mp4" type="video/mp4">
+        </video>    
+    </div>
+
+    <script>
+        var myvideo = document.getElementById("video1");
+
+        function playPause() {
+            if (myvideos.paused)
+                myvideo.play();
+            
+            else
+                myvideo.paused();
+        }
+        function big() {
+            myvideo.width = 560;
+        }
+        function small() {
+            myvideo.width = 320;
+        }
+
+        function normal() {
+            myvideo.width = 420;
+        }
+
+    </script>
+</body>
+
+</html>

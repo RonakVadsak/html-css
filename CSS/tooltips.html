@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contain{
+            text-align: center;
+            font-size: 30px;
+            position: relative;
+            /* border-bottom: 2px dotted black; */
+        }
+        .tool{
+            position: absolute;
+            visibility: hidden;
+            background-color: black;
+            color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 250px;
+            margin: 0 auto;
+            text-align: center;
+            top: 70px;
+            left: 570px;
+            opacity: 0;
+            transition: linear 2s;
+
+        }
+        .contain:hover .tool{
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        Who is kukdo?<br>
+        if you want to know then Hover here!!!
+        <div class="tool">
+            Mahi=Kukdo
+        </div>
+    </div>
+</body>
+</html>

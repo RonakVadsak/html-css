@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna bazar</title>
+    <style>
+        .main-contain {
+            border: 3px solid black;
+            margin: 0 auto;
+            padding: 30px;
+            width: 40%;
+            background-color: rgb(149, 146, 146);
+            font-size: 20px;
+        }
+
+        .name {
+            border: 3px solid black;
+            border-style: double;
+            margin-top: 10px;
+            background-color: rgb(183, 195, 183);
+            padding: 6px 20px;
+        }
+
+        .email {
+            border: 3px solid black;
+            border-style: double;
+            margin-top: 10px;
+            background-color: rgb(183, 195, 183);
+            padding: 6px 20px;
+        }
+
+        .phone {
+            border: 3px solid black;
+            border-style: double;
+            margin-top: 10px;
+            background-color: rgb(183, 195, 183);
+            padding: 6px 20px;
+        }
+
+        .address {
+            border: 3px solid black;
+            border-style: double;
+            margin-top: 10px;
+            background-color: rgb(183, 195, 183);
+            display: flex;
+            padding: 6px 20px;
+        }
+
+        .pin {
+            border: 3px solid black;
+            border-style: double;
+            margin-top: 10px;
+            background-color: rgb(183, 195, 183);
+            padding: 6px 20px;
+        }
+
+        .country {
+            border: 3px solid black;
+            border-style: double;
+            margin-top: 10px;
+            background-color: rgb(183, 195, 183);
+            padding: 6px 20px;
+        }
+
+        .card {
+            border: 3px solid black;
+            border-style: double;
+            margin-top: 10px;
+            background-color: rgb(183, 195, 183);
+            padding: 6px 20px;
+        }
+
+        .card input {
+            width: 10%;
+            margin-left: 0;
+        }
+
+        .cnumber {
+            border: 3px solid black;
+            border-style: double;
+            margin-top: 10px;
+            background-color: rgb(183, 195, 183);
+            padding: 6px 20px;
+        }
+
+        .cname {
+            border: 3px solid black;
+            border-style: double;
+            margin-top: 10px;
+            background-color: rgb(183, 195, 183);
+            padding: 6px 20px;
+        }
+
+        button.b1 {
+            width: 60%;
+            padding: 14px 10px;
+            margin-top: 20px;
+            margin-left: 110px;
+        }
+
+        input {
+            background-color: transparent;
+            margin-left: 50px;
+            font-size: 16px;
+            padding: 10px 12px;
+            border-color: gray;
+            width: 50%;
+        }
+
+        textarea {
+            background-color: transparent;
+        }
+
+        select {
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-contain">
+        <div>
+            <h1><ins><em>step 1</em> your details:</ins></h1>
+            <div>
+                <form>
+                    <div class="name">
+                        <label for="Name">Name:</label>
+                        <input type="text" id="Name" placeholder="First and Last name"><br>
+                    </div>
+
+                    <div class="email">
+                        <label for="Email">Email:</label>
+                        <input type="email" id="Email" placeholder="@gmail.com"><br>
+                    </div>
+                    <div class="phone">
+                        <label for="Phone">Mobile no:</label>
+                        <input type="tel" id="Phone" placeholder="+91 1234567890"><br>
+                    </div>
+                </form>
+            </div>
+
+            <h1><ins><em>Step 2</em> delivery address:</ins></h1>
+            <div>
+                <form>
+                    <div class="address">
+                        <label for="address">Address:</label>
+                        <div>
+                            <textarea rows="10" cols="38" id="address" placeholder="Enter your address"></textarea><br>
+                        </div>
+                    </div>
+                    <div class="pin">
+                        <label for="Post code">Pin code:</label>
+                        <input type="text" id="Post code" placeholder="Enter pin" maxlength="6"><br>
+                    </div>
+                    <div class="country">
+                        <label for="Country">select country:</label>
+                        <select name="Country" id="Country" size="">
+                            <option value="india">India</option>
+                            <option value="china">China</option>
+                            <option value="pakistan">Pakistan</option>
+                            <option value="russia">Russia</option>
+                            <option value="japan">Japan</option>
+                            <option value="dubai">Dubai</option>
+                            <option value="canada" selected>Canada</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+            <h1><ins><i>Step 3</i> card details:</ins></h1>
+            <div>
+                <div class="card">
+                    <label for="card">card type:</label><br>
+
+                    <input type="radio" id="visa" name="card"><img style="margin-top: 15px;" src="/Image/visa-logo.png"
+                        alt="" height="15" width="35"> visa
+                    <input type="radio" id="AmEx" name="card"><img style="margin-top: 15px;" src="/Image/Amex.png"
+                        alt="" height="15" width="30"> AmEx
+                    <input type="radio" id="Master" name="card"><img style="margin-top: 15px;" src="/Image/master.jpeg"
+                        alt="" height="15" width="30"> Master card <br>
+                </div>
+
+                <div class="cnumber">
+                    <label for="cnumber">Card number:</label>
+                    <input type="tex" id="cnumber" placeholder="1234-1234-1234" maxlength="12"><br>
+                </div>
+
+                <div class="cname">
+                    <label for="cname">Name on card:</label>
+                    <input type="text" id="cname" placeholder="As per your card">
+                </div>
+
+            
+                    <button type="button" class="b1" onclick="alert('Thank you for shopping with us')">BUT IT!</button>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

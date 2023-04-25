@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* section-1  */
+        .section-1 {
+            width: 100%;
+            height: 600px;
+            margin: 0 auto;
+            background-image: url("/web-4/Mask\ group.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section-1-1 {
+            width: 100%;
+            margin: 0 auto;
+
+        }
+
+
+
+        .section-1-heading {
+            text-align: center;
+            color: white;
+            font-size: 70px;
+            padding: auto;
+        }
+
+        .section-1-button {
+            width: 120px;
+            height: 40px;
+            text-align: center;
+            background-color: #E8883D;
+            color: white;
+            border-radius: 15px;
+            font-size: 15px;
+        }
+
+
+        /* section-1-2  */
+        .section-1-2 {
+            display: flex;
+            width: 80%;
+            margin: 100px auto;
+        }
+
+        .section-1-2-heading {
+            display: flex;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .section-1-2-3-image {
+            margin: 0 auto;
+            width: 30%;
+        }
+
+        .section-1-2-heading {
+            justify-content: center;
+            width: 50px;
+            margin: 0 auto;
+        }
+
+
+
+
+        /* section-2  */
+        .section-2 {
+            display: flex;
+            margin: 100px auto;
+            width: 80%;
+            height: 500px;
+            background-color: #EEF3F6;
+            justify-content: space-between;
+        }
+
+
+        .section-products {
+            text-align: center;
+            padding: 100px 20px;
+            border: 2px solid rgb(180, 180, 238);
+            width: 30%;
+            margin: 25px 0px 25px 25px;
+        }
+
+        .product-iamge {
+            width: 33%;
+            height: 33%;
+            background-color: white;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            text-align: center;
+            padding-top: 15px;
+            margin: 0 auto;
+
+        }
+
+        .section-products h4 {
+            color: orangered;
+            font-size: 20px;
+        }
+
+
+        .section-service {
+            text-align: center;
+            padding: 100px 20px;
+            border: 2px solid rgb(180, 180, 238);
+            width: 30%;
+            margin: 25px;
+        }
+
+        .service-iamge {
+            width: 33%;
+            height: 33%;
+            background-color: white;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            text-align: center;
+            padding-top: 15px;
+            margin: 0 auto;
+
+        }
+
+        .section-service h4 {
+            color: orangered;
+            font-size: 20px;
+        }
+
+
+        .section-about {
+            text-align: center;
+            padding: 100px 20px;
+            border: 2px solid rgb(180, 180, 238);
+            width: 30%;
+            margin:25px 25px 25px 0px;
+            
+        }
+
+        .about-iamge {
+            width: 33%;
+            height: 33%;
+            background-color: white;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            text-align: center;
+            padding-top: 15px;
+            margin: 0 auto;
+        }
+
+        .section-about h4 {
+            color: orangered;
+            font-size: 20px;
+        }
+
+        .section-products p{
+            
+        }
+
+
+        /* section-3  */
+        .section-3 {
+            width: 100%;
+            height: 450px;
+            background-image: url("/web-4/Chem\ plant\ pic\ 1.png");
+            position: relative;
+            margin: 50px 0px;
+        }
+
+        .sub-section-3 {
+            border: 2px solid transparent;
+            border-radius: 25px;
+            width: 34%;
+            height: 600px;
+            background-image: url("/web-4/Rectangle\ 40.png");
+            align-content: center;
+            position: absolute;
+            top: -50px;
+            left: 750px;
+            box-shadow: 10px 10px 5px black;
+            text-align: center;
+        }
+
+        .sub-section-heading {
+            display: flex;
+            font-size: 20px;
+            color: white;
+            justify-content: center;
+        }
+
+        .sub-section-3 .information {
+            color: #EEF3F6;
+
+        }
+
+        .information span {
+            color: #E8883D;
+        }
+
+        input::placeholder {
+            color: white;
+
+        }
+
+        input {
+            width: 160px;
+            height: 30px;
+            margin: 2px;
+            border: 2px solid white;
+            border-radius: 5px;
+            background-color: transparent;
+        }
+
+        .section-3 .for-upload-iamge {
+            border: 2px dotted #E8883D;
+            color: #E8883D;
+            text-align: center;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .section-3 textarea {
+            background-color: transparent;
+            border: 2px solid white;
+
+        }
+
+        .section-3 button {
+            width: 71%;
+            background-color: #E8883D;
+            color: #EEF3F6;
+            text-align: center;
+            height: 40px;
+            font-size: 15px;
+            box-shadow: 10px 10px 5px black;
+        }
+
+
+
+        /* for footer  */
+        footer {
+            margin-top: 150px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            position: absolute;
+            width: 100%;
+            top: 550px;
+        }
+
+
+
+
+        @media only screen and (max-width:600px) {
+            .section-1 {
+                height: 210px;
+            }
+
+            .section-1-heading {
+                font-size: 20px;
+            }
+
+            .section-1-2 {
+                display: block;
+                width: 100%;
+                margin: 50px auto;
+                text-align: center;
+
+            }
+
+            .section-1-2-3-image {
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            .section-1-2-icon {
+                display: none;
+            }
+
+            .section-2 {
+                display: block;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
+
+            .sub-section-3 {
+                width: 100%;
+                height: 100%;
+                left: 0px
+            }
+
+            .section-3 {
+                width: 100%;
+                height: 740px;
+                background: none;
+            }
+
+            .section-3 textarea {
+                background-color: transparent;
+                border: 2px solid white;
+                width: 85%;
+                height: 150px;
+
+            }
+
+            .image1 {
+                display: none;
+            }
+
+            input {
+                width: 85%;
+            }
+
+            .section-3 .for-upload-iamge {
+                text-align: center;
+                width: 85%;
+                margin: 0 auto;
+            }
+
+            .section-3 button {
+                width: 85%;
+                text-align: center;
+            }
+
+            footer {
+                display: block;
+                margin: 0;
+            }
+
+
+        }
+
+
+
+        @media only screen and (min-width:601px) and (max-width:768px) {
+            .section-1 {
+                height: 383px;
+            }
+
+            .section-1-heading {
+                font-size: 55px;
+            }
+
+            .section-1-2 {
+                display: block;
+                width: 100%;
+                margin: 50px auto;
+                text-align: center;
+
+            }
+
+            .section-1-2-icon {
+                display: none;
+            }
+
+            .section-1-2-3-image {
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            .section-2 {
+                display: block;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
+
+            .service-iamge {
+                width: 15%;
+                height: 15%;
+            }
+
+            .about-iamge {
+                width: 15%;
+                height: 15%;
+            }
+
+            .product-iamge {
+                width: 15%;
+                height: 15%;
+            }
+
+            .sub-section-3 {
+                width: 89%;
+                height: 100%;
+                left: 30px;
+            }
+
+            .section-3 {
+                width: 100%;
+                height: 740px;
+                background: none;
+            }
+
+            .section-3 textarea {
+                background-color: transparent;
+                border: 2px solid white;
+                width: 62%;
+                height: 150px;
+
+            }
+
+            .image1 {
+                display: none;
+            }
+
+            input {
+                width: 60%;
+            }
+
+            .section-3 .for-upload-iamge {
+                text-align: center;
+                width: 62%;
+                margin: 0 auto;
+            }
+
+            .section-3 button {
+                width: 60%;
+                text-align: center;
+            }
+
+            footer {
+                margin: 0;
+                position: absolute;
+                top: 730px;
+                width: 100%;
+            }
+
+
+        }
+
+        @media only screen and (max-width:1024px) and (min-width:769px) {
+            .section-1 {
+                height: 514px;
+            }
+
+            .section-1-1 {
+                width: 75%;
+                margin: 0 auto;
+            }
+
+            .section-1-heading {
+                font-size: 20px;
+            }
+
+            .section-1-2 {
+                display: flex;
+                width: 100%;
+                margin: 50px auto;
+                text-align: center;
+                justify-content: space-between;
+
+            }
+
+            .section-1-2-3-image {
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            .service-iamge {
+                width: 42%;
+                height: 30%;
+            }
+
+            .about-iamge {
+                width: 42%;
+                height: 30%;
+            }
+
+            .product-iamge {
+                width: 42%;
+                height: 30%;
+            }
+
+            footer {
+                margin: 0;
+                position: absolute;
+                top: 730px;
+                width: 109%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section-1">
+        <div class="section-1-1">
+            <h1 class="section-1-heading">A Leader in Quality <br>Valve Repair</h1>
+            <button class="section-1-button">contact us</button>
+        </div>
+    </div>
+
+    <div class="section-1-2">
+        <div class="section-1-2-image">
+            <img src="/web-4/Chem Plant Pic 20 1.png" alt="" height="100%" width="100%">
+        </div>
+
+        <div class="section-1-2-3-image">
+            <div class="section-1-2-heading">
+                <div class="section-1-2-icon">
+                    <img src="/web-4/Icon 2.png" alt="" height="50" width="50">
+                </div>
+                <div>
+                    <h1>INTRODUCTION</h1>
+                </div>
+                <div class="section-1-2-icon">
+                    <img src="/web-4/Icon 2.png" alt="" height="50" width="50">
+                </div>
+            </div>
+            <p>Since its beginning in 1987, Satsuma Valve & Controls has established itself as a leader in quality valve
+                repair and remanufacturing. Satsuma Valve & Controls represents and distributes some of the most
+                reputable,
+                performance proven valve and instrumentation lines in the country.
+                Satsuma Valve & Controls has a complete selection of control valves, relief valves, regulators, and
+                actuators, plus overnight shipment and a sales staff trained to give you prompt professional service.
+                All
+                products remanufactured by Satsuma Valve & Controls have a one year warranty from the date of shipment
+                to be
+                free from defective workmanship and material when used within recommended range.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="section-2">
+        <div class="section-products">
+            <div class="product-iamge">
+                <img src="/web-4/pipe (Traced).png" alt="" height="70" width="70">
+            </div>
+            <h3>PRODUCTS</h3>
+            <p>Performance-proven valve & instrumentation lines.</p>
+            <h4>Learn More -> </h4>
+        </div>
+
+        <div class="section-service">
+            <div class="service-iamge">
+                <img src="/web-4/settings (Traced).png" alt="" height="70" width="70">
+            </div>
+            <h3>Services</h3>
+            <p>Diagnostics, repair, machining, & much more.</p>
+            <h4>Learn More -> </h4>
+        </div>
+
+        <div class="section-about">
+            <div class="about-iamge">
+                <img src="/web-4/worker 1 (Traced).png" alt="" height="70" width="70">
+            </div>
+            <h3>About Us</h3>
+            <p>Unmatched expertise backed by a warranty.</p>
+            <h4>Learn More -> </h4>
+        </div>
+    </div>
+
+    <div class="section-3">
+        <div class="sub-section-3">
+            <div class="sub-section-heading">
+                <div class="image1"><img src="/web-4/Icon.png" alt="" height="70" width="70"></div>
+                <div>
+                    <h1>GET STARTED</h1>
+                </div>
+                <div class="image1"><img src="/web-4/Icon.png" alt="" height="70" width="70"></div>
+            </div>
+            <p class="information">Complete the form below or call <span>(225) 664-6502</span> or
+                toll free <span>(800) 648-8921</span></p>
+            <form>
+                <label for="enter-name"></label>
+                <input type="text" id="enter-name" name="enter-name" placeholder="Enter name">
+                <label for="enter-email"></label>
+                <input type="email" id="enter-email" name="enter-email" placeholder="Enter Email"><br>
+                <label for="enter-number"></label>
+                <input type="tel" id="enter-name" name="enter-name" placeholder="Phone number">
+                <label for="enter-company"></label>
+                <input type="text" id="enter-company" name="enter-company" placeholder="enter-company"><br>
+                <label for="quantity"></label>
+                <input type="number" id="quantity" name="quantity" placeholder="quantity">
+                <label for="project-status"></label>
+                <input type="" id="" name="" placeholder="project-status"><br>
+                <div class="for-upload-iamge">
+                    <p>upload iamge +</p>
+                </div>
+
+                <textarea name="text" id="text">Text area</textarea>
+            </form>
+
+            <button>
+                Get a quote
+            </button>
+        </div>
+
+
+        <footer>
+            <p>© 2022 Satsuma Valves & Controls.</p>
+            <p>Privacy Policy | Terms & conditions</p>
+        </footer>
+</body>
+
+</html>

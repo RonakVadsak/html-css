@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .button-1 {
+            border: 2px solid black;
+            background-color: green;
+            width: 100px;
+            margin: 0 30px;
+            font-size: 24px;
+            padding: 10px 30px;
+            text-align: center;
+            color: white;
+            box-shadow: 0px 5px 5px black;
+        }
+
+        .button-1:hover {
+            color: yellow;
+        }
+
+
+        .button-2 {
+            border: 2px solid black;
+            background-color: green;
+            width: 100px;
+            margin: 0 30px;
+            font-size: 24px;
+            padding: 10px 30px;
+            text-align: center;
+            color: white;
+            box-shadow: 0px 5px 5px black;
+        }
+
+        .button-2:hover {
+            color: black;
+            transition-duration: 2s;
+            background: rgb(255, 255, 255);
+            background: radial-gradient(circle, rgba(255, 255, 255, 1) 2%, rgba(0, 212, 255, 1) 50%, rgba(0, 212, 255, 1) 85%);
+        }
+
+
+
+        .button-3 {
+            border: 2px solid black;
+            background-color: green;
+            width: 100px;
+            margin: 0 30px;
+            font-size: 24px;
+            padding: 10px 30px;
+            text-align: center;
+            color: white;
+            box-shadow: 0px 5px 5px black;
+        }
+
+        .button-3:hover {
+            color: black;
+            transition-duration: 2s;
+            background: rgb(34, 193, 195);
+            background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+        }
+
+
+        .button-4 {
+            border: 2px solid black;
+            background-color: green;
+            width: 100px;
+            margin: 0 30px;
+            font-size: 24px;
+            padding: 10px 30px;
+            text-align: center;
+            color: white;
+            box-shadow: 0px 5px 5px black;
+        }
+
+        .button-4:hover {
+            color: black;
+            transition-duration: 2s;
+            background: rgb(34, 193, 195);
+            background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            outline-offset: 10px;
+            outline: 2px solid black;
+        }
+
+        .button-5 {
+            border: 2px solid black;
+            background-color: green;
+            width: 100px;
+            margin: 0 30px;
+            font-size: 24px;
+            padding: 10px 30px;
+            text-align: center;
+            color: white;
+            box-shadow: 0px 5px 5px black;
+        }
+
+        .button-5:hover {
+            color: black;
+            transition-duration: 2s;
+            background: rgb(34, 193, 195);
+            background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            transform: scaleX(0.5);
+        }
+
+
+        .button-6 {
+            border: 2px solid black;
+            background-color: green;
+            width: 100px;
+            margin: 0 30px;
+            font-size: 24px;
+            padding: 10px 30px;
+            text-align: center;
+            color: white;
+            box-shadow: 0px 5px 5px black;
+        }
+
+        .button-6:hover {
+            color: black;
+            transition-duration: 2s;
+            background: rgb(34, 193, 195);
+            background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            transform: scaleY(0.5);
+        }
+
+
+
+        .button-7 {
+            border: 2px solid black;
+            background-color: green;
+            width: 100px;
+            margin: 0 30px;
+            font-size: 24px;
+            padding: 10px 30px;
+            text-align: center;
+            color: white;
+            box-shadow: 0px 5px 5px black;
+        }
+
+        .button-7:hover {
+            color: black;
+            background: rgb(34, 193, 195);
+            background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            transform: translateX(50px);
+            transition-duration: 2s;
+            
+        }
+
+
+
+        .button-8 {
+            border: 2px solid black;
+            background-color: green;
+            width: 100px;
+            margin: 0 30px;
+            font-size: 24px;
+            padding: 10px 30px;
+            text-align: center;
+            color: white;
+            box-shadow: 0px 5px 5px black;
+        }
+
+        .button-8:hover {
+            color: black;
+            background: rgb(34, 193, 195);
+            background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            transform: translateY(50px);
+            transition-duration: 2s;            
+        }
+
+
+
+        .button-9 {
+            border: 2px solid black;
+            background-color: green;
+            width: 100px;
+            margin: 25px 30px;
+            font-size: 24px;
+            padding: 10px 30px;
+            text-align: center;
+            color: white;
+            box-shadow: 0px 5px 5px black;
+        }
+
+        .button-9:hover {
+            color: black;
+            background: rgb(34, 193, 195);
+            background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            transform: sacle(50px);
+            transition-duration: 2s;  
+            transition-timing-function: linear;  
+            width: 300px;
+            margin: 0;
+            font-size: 35px;        
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="button-1" type="button" onclick="window.print()">Print</button>
+    <button class="button-2" type="button" onclick="window.print()">Print</button>
+    <button class="button-3" type="button" onclick="window.print()">Print</button>
+    <button class="button-4" type="button" onclick="window.print()">Print</button>
+    <button class="button-5" type="button" onclick="window.print()">Print</button>
+    <button class="button-6" type="button" onclick="window.print()">Print</button>
+    <button class="button-7" type="button" onclick="window.print()">Print</button>
+    <button class="button-8" type="button" onclick="window.print()">Print</button>
+    <button class="button-9" type="button" onclick="window.print()">Print</button>
+
+
+</body>
+
+</html>
+

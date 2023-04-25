@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("logical operators and if statement<br><br><br>")
+        var age=20;
+
+        if( age >= 18 && age<25){
+            document.write(" you are crazy");
+        }
+        else{
+            document.write("you are not crazy");
+        }
+        document.write("<br>");
+
+
+        if( age >= 21 && age<25){
+            document.write(" you are crazy");
+        }
+        else{
+            document.write("you are not crazy");
+        }
+        document.write("<br>");
+        // if we use && operatore then it's runs if both conditions ture
+        
+        if( age >= 21 || age<25){
+            document.write(" you are crazy");
+        }
+        else{
+            document.write("you are not crazy");
+        }
+        document.write("<br>");
+
+        if( age >= 21 || age<19){
+            document.write(" you are crazy");
+        }
+        else{
+            document.write("you are not crazy");
+        }
+        document.write("<br>");
+        // if we use || operatore then it's runs if one condition ture from multiple conditions 
+        
+
+        if (!age >= 18 && age<25){
+            document.write(" you are crazy");
+        }
+        else{
+            document.write("you are not crazy");
+        }
+        document.write("<br>");
+    </script>
+</body>
+</html>

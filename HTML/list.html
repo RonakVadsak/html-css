@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIST</title>
+    <style>
+        .main{
+            margin: 0 auto;
+            border: 2px outset black;
+            display: flex;
+            width: 100%;
+        }
+        .sub-contain1{
+            width: 33.33%;
+        }
+        .sub-contain2{
+            width: 33.33%;
+        }
+        .sub-contain3{
+            width: 33.33%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    
+        
+        <div class="sub-contain1">
+            <h1 style="text-align: center;">Unorder list</h1>
+            <h3>Dairy product</h3>
+            <ul>
+                <li>milk</li>
+                <li>butter milk</li>
+                <li>cream</li>
+                    <ul>
+                        <li>Light cream</li>
+                        <li>Whipping cream</li>
+                    </ul>
+                <li>custard</li>
+                <li>cheese</li>
+            </ul>
+        </div>
+
+        
+        <div class="sub-contain2">
+            <h1 style="text-align: center;">Order list</h1>
+            <h3>Dairy product</h3>
+            <ol type="A">
+                <li>milk</li>
+                <li>butter milk</li>
+                <li>cream</li>
+                    <ol type="I">
+                        <li>Light cream</li>
+                        <li>Whipping cream</li>
+                    </ol>
+                <li>custard</li>
+                <li>cheese</li>
+            </ol>
+        </div>
+
+        
+        <div class="sub-contain3">
+            <h1 style="text-align: center;">Discription list</h1>
+            <h3>Dairy product</h3>
+            <dl>
+                <dt>milk</dt>
+                <dt>butter milk</dt>
+                <dt>cream</dt>
+                    <dd>Light cream</dd>
+                    <dd>Whipping cream</dd>
+                <dt>custard</dt>
+                <dt>cheese</dt>
+            </dl>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+#main-form{
+    margin: 0px;
+    width: 100%;
+    form{
+        margin: 100px auto;
+        width: 50%;
+    }
+    input{
+        height: 50px !important;
+    }
+    button{
+        background-color: #085ED6 !important;
+        height: 50px !important;
+    }
+}

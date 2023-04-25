@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT</title>
+    <style>
+        /* main div */
+        .c1{
+            display: flex;
+
+        }
+        /* for header */
+        .layout{
+            font-size: 70px;
+            padding: 50px;
+            background-color: #666666;
+            text-align: center;
+            color: aliceblue;
+        }
+        /* for navbar div */
+        .contain1{
+            width: 30%;
+            background-color: #CCCCCC;
+        }
+        /* for ul */
+        .main-contain{
+            
+            list-style-type: none;
+            min-height: 127vh;
+            margin-top: 100px;
+        }
+        /* for li */
+        .sub-contain a{
+            font-size: 25px;
+            text-decoration: none;
+            text-align: center;
+            margin: 100px;
+        }
+        .sub-contain a:hover{
+            color: red;
+        }
+        /* for article */
+        .article1{
+            width: 70%;
+            font-size: 25px;
+            margin: 0;
+            padding: 20px;
+        }
+        /* for footer */
+        .last{
+            font-size: 25px;
+            background-color: #666666;
+            text-align: center;
+            color: aliceblue;
+        }
+        h3{
+            text-align: center;
+            font-size: 35px;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        p{
+            margin: 0;
+        }
+        .photos{
+            display: flex;
+            float: right;
+        }
+        .photos1{
+            display: flex;
+            float: left; 
+        }
+    </style>
+</head>
+<body>
+    <header class="layout">AREA</header>
+    <div class="c1">
+        <div class="contain1">
+            <nav class="navbar">
+                <ul class="main-contain">
+                    <li class="sub-contain"><a href="#Kt">Katargam</a></li>
+                    <li class="sub-contain"><a href='#Amroli1'>Amroli</a></li>
+                    <li class="sub-contain"><a href="#varachha1">varchha</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+        <div class="article1">
+            <article id="Kt">
+                <h3>Katargam</h3>
+                <img class="photos" src="/Image/katargam.jpeg" alt="katargam" height="350px" width="400px">
+                <p>
+                    Katargam is a suburb in Surat city and host of the world famous Surat diamond industry. Today Katargam is one of the best developed areas in Surat city and also boasts of diamond industries. It is home to the upper middle class of the city's residents. The area is also known as dense Concrete Jungle. It was a Nagar Panchayat in 1970s but was later amalgamated in Surat Municipal Corporation. Due to the development of Diamond Industries in the town it spurred growth in population and its population is around 0.7 million as of 2008 estimates. The majority of the population is from Saurastra also known as Katiyawad.
+                </p>
+            </article><br>
+
+            <article id="Amroli1">
+                <h3>Amroli</h3>
+                <img class="photos1" src="/Image/Amroli.jpeg" alt="" height="350px" width="400px">
+                <p>
+                    Amroli is a suburb in around Surat state of gujarat in India. The nearest airport is surat airport.<br>  Amroli had a population of 32457. Males constitute 63% of the population and females 38%. Amroli has an average literacy rate of 74%, higher than the national average of 59.5%: male literacy is 81%, and female literacy is 63%. In Amroli, 14% of the population is under 6 years of age.
+                </p><br>
+                <p>By road: Amroli is in Surat<br>
+                    By air: Nearest airport is Surat which is 19 km (12 miles) from Amroli.</p>
+            </article>
+
+            <article id="varachha1">
+                <h3>Varachha</h3>
+                <img src="/Image/mota varachha.jpeg" alt="">
+                    <p>
+                        Varachha is a Suburb in Surat city and host of the Surat Diamond and embroidery Industry. The people of Saurashtra of Western Gujarat have moved away from their rain-starved native to Surat in search for income generation and survival almost four decades ago. Since then Saurashtrians have considered Surat as their home land.  After coming to Surat, some individuals began trading business while majority of them entered into labour front in a phased manner.
+                    </p>
+            </article>
+        </div>
+    </div>
+
+    <footer class="last">Darshit@ copyright<sup>R</sup></footer>
+</body>
+</html>

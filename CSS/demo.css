@@ -1,0 +1,93 @@
+h1 {
+    background-color: rebeccapurple;
+    color: white;
+    text-align: center;
+}
+
+p {
+    background-color: black;
+    color: white;
+    text-align: justify;
+}
+
+div {
+    background-color: #ffffff;
+}
+
+.direction1 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.lowercase {
+    text-transform: lowercase;
+    font-size: 20px;
+}
+
+.capitalize {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.spacing1{
+    text-indent: 50px;
+    text-transform: capitalize;
+}
+.letter1{
+    letter-spacing: 3px;
+}
+h2{
+    /* first horizontal=x
+    vertical=y
+    then blure and color */
+
+    text-shadow: 20px 20px 8px red;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 100px;
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+}
+.icon1{
+    font-size: 25px;
+    color: red;
+    
+
+}
+.link1{
+    font-size: 25px;
+    text-align: center;
+    color: hotpink;
+    text-decoration: none;
+
+}
+.link1:hover{
+    color: rgb(50, 180, 50);
+    text-decoration: underline;
+}
+.link1:active{
+    color: yellow;
+}
+.link1:visited{
+    color: rgb(191, 143, 81);
+    text-decoration: underline;
+}
+.b1{
+    height: 50px;
+    text-align: center;
+    margin-top: 40px;
+}
+.li1{
+    font-size: 30px;
+    /* list-style-image: url("/silhouette-bridge-crab-plover-birds-image-taken-surat-city-golden-hour-photographers-stunning-170042876.jpg"); */
+}
+.li2{
+    list-style-position: inside;
+}

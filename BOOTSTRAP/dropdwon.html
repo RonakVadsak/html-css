@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 120px;
+            height: 40px;
+            background-color: green;
+            color: black;
+            border: 3px solid black;
+            cursor: pointer;
+            box-shadow: 10px 10px 5px black;
+            transition: all 3s linear 2s;
+
+        }
+        .main{
+            position: relative;
+            display: inline-block;
+        }
+        .second{
+            display: none;
+            position: absolute;
+            
+        }
+        .second a{
+            text-decoration: none;
+            color: rgb(233, 227, 227);
+            display: block;
+            
+
+        }
+        .second a:hover{
+            background-color: cadetblue;
+
+        }
+
+        .main:hover .second{
+            display:block;
+            background-color: black;
+            width: 120px;
+            text-align: center;
+            font-size: 25px;
+            box-shadow: 10px 10px 5px rgb(174, 93, 93);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button>menu</button>
+        <div class="second">
+            <a href="">link 1</a>
+            <a href="">link 2</a>
+            <a href="">link 3</a>
+            <a href="">link 4</a>
+            <a href="">link 5</a>
+            <a href="">link 6</a>
+            <a href="">link 7</a>
+        </div>
+    </div>
+</body>
+</html>

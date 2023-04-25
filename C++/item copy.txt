@@ -1,0 +1,2 @@
+name=leptop
+cost=10000

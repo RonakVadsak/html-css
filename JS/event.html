@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        button{
+            background-color: black;
+            color: white;
+            border: 2px solid transparent;
+            border-radius: 15px;
+            height: 40px;
+            width: 120px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="a()">Click</button><br>
+    <button ondblclick="b()">Double Click</button><br>
+    <button oncontextmenu="c()">Right click</button><br>
+
+
+    <button onmouseenter="d()">Mouse Hover</button><br>
+    <button onmouseout="e()">Mouse Out</button><br>
+    <button onmousedown="f()">Mosue Down</button><br>
+    <button onmouseup="g()">Mosue Up</button><br>
+
+
+    <button onkeypress="h()">Key Press</button><br>
+    <button onkeyup="i()">Key Up</button><br>
+
+
+    <button onload="j()">Load</button><br>
+    <button onunload="k()">Unload</button><br>
+    <button onresize="l()">Resize</button><br>
+    <button onscroll="m()">Scroll</button><br>
+    
+
+
+    <script>
+        function a(){
+            document.write("THNAK YOU");
+        }
+        function b(){
+            document.write("Doblick is success");
+        }
+        function c(){
+            document.write("Right click is success");
+        }
+
+
+
+        function d(){
+            document.write("Mouse Hover is success");
+        }
+        function e(){
+            document.write("Mouse Out is success");
+        }
+        function f(){
+            document.write("Mouse Down is success");
+        }
+        function g(){
+            document.write("Mouse up is success");
+        }
+
+
+
+        function h(){
+            document.write("Key Press is success");
+        }
+        function i(){
+            document.write("Mouse Up is success");
+        }
+
+
+
+        function j(){
+            alert("Load is success");
+        }
+        function k(){
+            alert("Unload is success");
+        }
+        function l(){
+            document.write("Resize is success");
+        }
+        function m(){
+            document.write("Scroll is success");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+Itemname=book
+100

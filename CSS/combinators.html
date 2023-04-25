@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .descendant p {
+            background-color: aqua;
+        }
+
+        .child>p {
+            background-color: aqua;
+        }
+        .Adjacent+p{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Descendant Selector</h2>
+        <div class="descendant">
+            <p>This is paragraph 1</p>
+            <p>This is paragraph 2</p>
+            <p>This is paragraph 3</p>
+        </div>
+        <p>This is paragraph 4</p>
+        <p>This is paragraph 5</p>
+
+        <h2>Child Selector</h2>
+        <div class="child">
+            <p>This is paragraph 1</p>
+            <p>This is paragraph 2</p>
+            <section>
+                <p>This is paragraph 3(inside in the elements)</p>
+            </section>
+            <p>This is paragraph 4</p>
+            <p>This is paragraph 5</p>
+        </div>
+
+        <h2>Adjacent Sibling Selector</h2>
+        <div class="Adjacent">
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+        </div>
+
+        <p>Paragraph 3. After a div.</p>
+        <p>Paragraph 4. After a div.</p>
+
+        <div class="Adjacent">
+            <p>Paragraph 5 in the div.</p>
+            <p>Paragraph 6 in the div.</p>
+        </div>
+
+        <p>Paragraph 7. After a div.</p>
+        <p>Paragraph 8. After a div.</p>
+
+        <h1>finish</h1>
+        <h2>General Sibling Selector</h2>
+        <div class="General">
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+        </div>
+
+        <p>Paragraph 3. After a div.</p>
+        <p>Paragraph 4. After a div.</p>
+
+        <div class="Adjacent">
+            <p>Paragraph 5 in the div.</p>
+            <p>Paragraph 6 in the div.</p>
+        </div>
+
+        <p>Paragraph 7. After a div.</p>
+        <p>Paragraph 8. After a div.</p>
+
+    </div>
+</body>
+
+</html>

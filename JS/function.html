@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- code is become short by using function and when you use code again and again that time 
+    function is very use full;
+    () is very important to make function and call function;
+    function name is also important; -->
+    <script>
+        document.write("<h1> Simple function</h1>");
+        function Hello() {
+            document.write("how are you??");
+        }
+        function good() {
+            document.write("i am good");
+        }
+
+
+        Hello();
+        document.write("<br>");
+        good();
+
+
+        document.write("<h1> function with parameter</h1>");
+        var a=10;
+        var b=30;
+        function sum(a,b){
+            sum=a+b;
+            document.write(sum);
+
+        }
+
+        sum(10,30);
+
+        document.write("<h1>function with return </h1>")
+        var a = 100; /* when user do not put value, that time default value run */
+        var b = 200; /* when user do not put value, that time default value run */
+        var c;
+        function sum(a, b) {
+            c = a + b;
+            document.write(c);
+            return c;
+        }
+
+        sum(10, 40); /* user value*/
+
+
+        function toCelsius(f) {
+            return (5 / 9) * (f - 32);
+        }
+        document.write("<br>")
+        document.write(toCelsius(77));
+
+    </script>
+</body>
+
+</html>

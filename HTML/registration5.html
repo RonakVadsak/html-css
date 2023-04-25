@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing up</title>
+    <style>
+        body{
+            background: rgb(215,229,236);
+            background: linear-gradient(90deg, rgba(215,229,236,1) 10%, rgba(2,178,232,1) 30%, rgba(0,212,255,1) 70%, rgba(215,229,236,1) 90%);
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+        /* for main div  */
+        .main{
+            display: flex;
+            width: 80%;
+            
+        }
+        /* for sub div of main div  */
+        .main-contain {
+            width: 60%;
+            height: 600px;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-image: url("/Image/Signup1.svg");
+            box-shadow: 7px 7px 3.5px #49778C;
+
+        }
+        /* for contain1  */
+        .sub-contain2 {
+            width: 100%;
+            height: 225px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+            margin-top: 70px;
+            
+        }
+
+        /* for button tag  */
+        .B1 {
+            text-align: center;
+            width: 13%;
+            margin: 65px auto;
+            display: block;
+            font-size: 16px;
+            padding: 5px;
+            border-radius: 20px;
+            background-color: #1F201C;
+            opacity: 0.7;
+            color: white;
+        }
+        /* for second contain of button  */
+        .B2{
+            text-align: center;
+            width: 20%;
+            margin: 30px auto;
+            display: block;
+            font-size: 16px;
+            padding: 5px;
+            border-radius: 20px;
+            background-color: #b1b5a3;
+            opacity: 0.9;
+            color: white;
+        }
+        /* for h1 tag of sub-contain1  */
+        .T1 {
+            font-size: 40px;
+            margin-top: 100px;
+        }
+
+        /* for p tag of sub-contain1  */
+        .d1 {
+            font-size: 30px;
+        }
+
+        /* for sencond contain */
+        .sub-contain1 {
+            border: 2px solid black;
+            border-radius: 15px;
+            width: 50%;
+            background-image: url(/Image/r5.jpeg);
+            color: aliceblue;
+            text-align: center;
+            height: 400px;
+            margin-top: 90px;
+            box-shadow: 7px 7px 3.5px #49778C;
+            z-index: 3;
+            margin-right: -40px;
+        }
+
+        /* for input */
+        .I1 {
+            color: aliceblue;
+        }
+        /* for main icon and password  */
+        .main-icon {
+            display: flex;
+            border: 2px solid white;
+            border-radius: 40px;
+            width: fit-content;
+            padding: 10px;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 100px;
+        }
+
+        input {
+            background-color: transparent;
+            border-color: transparent;
+            font-size: 18px;
+        }
+        /* for i tag  */
+        .icon-edit1 {
+            font-size: 30px;
+            margin: 0 10px;
+            border: 3px solid white;
+            border-radius: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        /* for fb,g,link  */
+        .icons{
+            display: flex;
+            margin-top:20px;
+            margin-left: 155px;
+            margin-bottom: 20px;
+            color: rgb(241, 235, 235);
+            width: 45%;
+            margin: 15px auto;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="icon" type="image/x-icon" href="/Image/sign1.jpeg">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="sub-contain1">
+    
+            <h1>Sign up</h1>
+
+            <div class="icons">
+                <i class="fa-brands fa-facebook icon-edit1"></i>
+                <i class="fa-brands fa-google icon-edit1"></i>
+                <i class="fa-brands fa-linkedin icon-edit1"></i>
+            </div>
+    
+            <form>
+                <div class="main-icon">
+                    <i class="fa-solid fa-envelope icon-edit"></i>
+                    <input class="I1" type="text" name="e-mail" id="e-mail" placeholder="enter email">
+                </div>
+                <div class="main-icon">
+                    <i class="fa-solid fa-lock icon-edit"></i>
+                    <input class="I1" type="password" name="password" id="password" placeholder="password"><br>
+                </div>
+                    <label><ins>forget password</ins></label>
+            </form>
+
+                <button class="B2" type="button" onclick="alert('Submitted')">Sing in</button>
+        </div>
+
+        <div class="main-contain">
+            <div class="sub-contain2">
+                <h1 class="T1">Welcome Back!</h1>
+                <p class="d1">Enter personal details<br>to your employee account</p>
+            </div>
+            <button class="B1" type="button" onclick="alert('Submitted')">Sign up</button>
+        </div>
+    
+
+    </div>
+</body>
+
+</html>

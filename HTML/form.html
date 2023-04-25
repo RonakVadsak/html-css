@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .A1{
+            text-align: center;
+            margin: 30px;
+            padding: 20px;
+            font-size: 40px;
+        }
+        /* for car */
+        .A2{
+            text-align: center;
+            margin: 30px;
+            padding: 20px;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="A1">
+        <form>
+            <label for="First name">First name</label><br>
+            <input type="text" id="First name" placeholder="your name with surname"><br>
+            <label for="Email id">email id</label><br>
+            <input type="email" id="Email id" placeholder="@gmail.com"><br>
+            <label for="birthday">birth-date</label><br>
+            <input type="date" id="birthday" placeholder="dd"><br>
+            <button type="button" onclick="alert('Are you sure! you want to submit?')">Submit</button><br>
+
+            <label for="datemin">after 2000</label><br>
+            <input type="date" id="datemin" name="datemin" min="2000-01-10"><br>
+
+            <label for="datemax">before 2000</label><br>
+            <input type="date" id="datemax" name="datemax" max="2000-01-10"><br>
+
+            <label for="password">password</label><br>
+            <input type="password" id="password" placeholder="Password">
+        </form>
+    </div>
+
+    
+
+    <div class="A2">
+        <form>
+            <label for="car">hobbies</label><br>
+            <input type="checkbox">Drawing<br>
+            <input type="checkbox">playing<br>
+            <input type="checkbox">reading<br>
+            <input type="checkbox">writing<br>
+
+            <button type="button" onclick="alert('Are you sure! you want to submit?')">Submit</button>
+        </form>
+    </div>
+
+    <div class="A2">
+        <form>
+            <label for="car">select car</label>
+            <select id="car" name="car" size="">
+                <option value="volvo">volvo</option>
+                <option value="audi">Audi</option>
+                <option value="suzuki">Suzuki</option>
+                <option value="none">None</option>
+            </select>
+        </form>
+    </div>
+</body>
+</html>

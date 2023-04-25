@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // for length property 
+        document.write("<h1>Method of String</h1>");
+        document.write("<h1>1.Lenght (property)</h1>");
+        var str = "java script is a great language";
+        var a = str.length;
+        document.write(a);
+
+
+
+        // for toLowerCase()
+        document.write("<h1>2.toLowerCase</h1>");
+        var str = "java script is a great language";
+        var a = str.toLowerCase();
+        document.write(a);
+
+
+
+        // for toUpperCase()
+        document.write("<h1>3.toUpperCase</h1>");
+        var str = "java script is a great language";
+        var a = str.toUpperCase();
+        document.write(a);
+
+
+        // for includes()
+        document.write("<h1>4.includes</h1>");
+        var str = "java script is a great language";
+        var a = str.includes("great");
+        document.write(a);
+
+
+        // for startsWith()
+        document.write("<h1>5.startsWith</h1>");
+        var str = "java script is a great language";
+        var a = str.startsWith("java");
+        document.write(a);
+
+
+        // for endsWith()
+        document.write("<h1>6.endsWith</h1>");
+        var str = "java script is a great language";
+        var a = str.endsWith("language");
+        document.write(a);
+
+
+        // for search()
+        document.write("<h1>7.search</h1>");
+        document.write("<h3>Find the charecter and return the index of character</h3>");
+        var str = "java script is a great language";
+        var a = str.search("language");
+        document.write(a);
+
+
+        // for match()
+        document.write("<h1>8.match</h1>");
+        document.write("<h3>(/letter name/ global and local)</h3>");
+        var str = "java script is a great language which is good of career";
+        var a = str.match(/is/g);
+        document.write(a);
+
+
+        // for indexOf()
+        document.write("<h1>9.indexOf</h1>");
+        var str = "java script is a great language";
+        var a = str.indexOf("script");
+        document.write(a);
+
+
+        // for lastIndexOf()
+        document.write("<h1>6.lastIndexOf</h1>");
+        var str = "java script is a great language";
+        var a = str.lastIndexOf("a");
+        document.write(a);
+
+
+        // for replace()
+        document.write("<h1>9.replace</h1>");
+        var str = "java script is a great language";
+        var a = str.replace("java","php");
+        document.write(a);
+
+
+        // for trim()
+        document.write("<h1>10.trim</h1>");
+        var str = "          java script is a great language";
+        var a = str.trim();
+        // alert(a);
+
+
+        // for chartAt()
+        document.write("<h1>11.chartAt</h1>");
+        var str = "java script is a great language";
+        var a = str.charAt(3);
+        document.write(a);
+
+        // for chartCodeAt()
+        document.write("<h1>12.chartCodeAt</h1>");
+        var str = "java script is a great language";
+        var a = str.charCodeAt(3);
+        document.write(a);
+
+        // for chartAt()
+        document.write("<h1>13.fromCharCode</h1>");
+        // var str = "java script is a great language";
+        var a = String.fromCharCode(65);
+        document.write(a);
+
+    </script>
+</body>
+
+</html>

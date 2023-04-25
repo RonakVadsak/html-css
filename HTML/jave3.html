@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="A1"></p>
+    <script>
+        function light(sw)
+        {
+            var pic;
+            if (sw==0)
+            {
+              pic = "/Iamge/Bulb-1.jpeg"
+            }
+            else 
+            {
+                pic = "/Iamge/Bulb-2.jpeg"
+            }
+            document.getElementById("image").src = pic;
+        }
+    </script>
+
+    <img id="image" src="./Image/Bulb-1.jpeg" width="200" height="360">
+
+    <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+</body>
+</html>

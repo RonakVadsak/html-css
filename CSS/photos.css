@@ -1,0 +1,96 @@
+body {
+    background: rgb(215, 229, 236);
+    background: linear-gradient(90deg, rgba(215, 229, 236, 1) 15%, rgba(2, 178, 232, 1) 33%, rgba(1, 186, 238, 1) 40%, rgba(1, 193, 242, 1) 50%, rgba(0, 203, 249, 1) 56%, rgba(0, 212, 255, 1) 73%, rgba(215, 229, 236, 1) 85%);
+}
+
+.photo {
+    text-align: center;
+    position: relative;
+    margin: 50px auto;
+}
+
+/* for facbook */
+.icon1 {
+    font-size: 50px;
+    position: absolute;
+    top: 25px;
+    left: 450px;
+    width: 200px;
+    height: 200px;
+    color: #0A81Ec;
+
+}
+
+/* for instagram  */
+.icon2 {
+    font-size: 50px;
+    position: absolute;
+    top: 27px;
+    right: 293px;
+    width: 200px;
+    height: 200px;
+    color: rgb(222, 150, 231);
+}
+
+/* for snapchat */
+.icon3 {
+    font-size: 50px;
+    position: absolute;
+    top: 520px;
+    left: 450px;
+    width: 200px;
+    height: 200px;
+    color: #F7F301;
+}
+
+/* for pinterest */
+.icon4 {
+    font-size: 50px;
+    position: absolute;
+    top: 520px;
+    right: 300px;
+    width: 200px;
+    height: 200px;
+    color: red;
+}
+/* for whatapp  */
+.icon5{
+    font-size: 50px;
+    position: absolute;
+    top: 250px;
+    right: 311px;
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+/* for telegram  */
+.icon6{
+    font-size: 50px;
+    position: absolute;
+    top: 250px;
+    left: 470px;
+    width: 200px;
+    height: 200px;
+    color: white;
+
+}
+/* for spotify  */
+.icon7{
+    font-size: 50px;
+    position: absolute;
+    top: 50px;
+    left: 700px;
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+/* for you tube  */
+.icon8{
+    font-size: 50px;
+    position: absolute;
+    top: 508px;
+    left: 700px;
+    width: 200px;
+    height: 200px;
+    color: white;
+}

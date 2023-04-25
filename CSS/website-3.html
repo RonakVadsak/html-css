@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .nav-bar {
+            width: 100%;
+            margin: 15px auto;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .navbar-part-1 {
+            display: flex;
+            border: 2px solid black;
+            border-radius: 100px;
+            background-color: black;
+            height: 50px;
+            width: 11%;
+            margin: 0;
+        }
+
+        .navbar-part-1 p {
+            margin: 16px 8px;
+            font-size: 15px;
+        }
+
+        .fa-arrow-pointer {
+            border: 2px solid black;
+            border-radius: 50%;
+            padding: 13px 20px;
+            height: 20px;
+            background-color: aliceblue;
+        }
+
+        .checkbox-1 {
+            height: 70px;
+            font-size: 35px;
+            color: aliceblue;
+        }
+
+        .navbar-part-2 {
+            display: flex;
+            width: 50%;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .navbar-part-2 li {
+            margin-left: 100px;
+            justify-content: end;
+            list-style-type: none;
+        }
+
+
+        /* for part-1  */
+        .part-1 {
+            display: flex;
+        }
+
+        .part-1-1 {
+            width: 45%;
+            margin: 0;
+            background-color: lightgrey;
+            padding: 10px 10px;
+            border: 2px solid transparent;
+            border-radius: 15px;
+
+        }
+
+        .part-1-1 h1 {
+            font-size: 60px;
+        }
+
+        .part-1-1 p {
+            font-size: 20px;
+        }
+
+        .part-1-1 button {
+            background-color: black;
+            color: white;
+            border: 2px solid transparent;
+            border-radius: 12px;
+            width: 120px;
+            height: 40px;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .part-1-2 {
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        .image-1 {
+            height: 500px;
+            width: 100%;
+        }
+
+
+        /* for part-2  */
+        .part-2 {
+            width: 100%;
+            margin: 0;
+            padding: 100px 0px;
+            /* position: relative; */
+            /* overflow: hidden; */
+        }
+
+        .image-2-2-2 {
+            position: absolute;
+            right: 200px;
+            top: -25px;
+            transform: rotate(25deg);
+        }
+
+        .part-2-1 {
+            display: flex;
+            padding: 20px 0px;
+            width: 100%;
+            margin: 0;
+        }
+
+        .part-2-2-1 {
+            width: 50%;
+            margin: 0;
+        }
+
+        .part-2-2-1 h1 {
+            font-size: 44px;
+        }
+
+        .part-2-2-1 p {
+            font-size: 20px;
+        }
+
+        .part-2-2-2 {
+            width: 50%;
+            margin: 0;
+            background-color: lightgrey;
+            border: 2px solid transparent;
+            border-radius: 15px;
+            padding: 35px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .part-2-2-2 .comment {
+            color: lightslategray;
+        }
+
+        .part-2-2 {
+            width: 100%;
+            margin: 0;
+        }
+
+
+
+        /* for part-3  */
+        .part-3 {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .part-3 h1 {
+            font-size: 44px;
+        }
+
+        .part-3-main {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .part-3-1 {
+            width: 33%;
+            margin: 0 auto;
+        }
+
+        .part-3 .round-1 {
+            width: 40px;
+            height: 40px;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            background: rgba(133, 166, 231, 1);
+        }
+
+        .part-3-2 {
+            width: 33%;
+            margin: 0 auto;
+        }
+
+        .part-3 .round-2 {
+            width: 40px;
+            height: 40px;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            background: rgba(239, 163, 131, 1);
+
+        }
+
+
+        .part-3-3 {
+            width: 33%;
+            margin: 0 auto;
+        }
+
+        .part-3 .round-3 {
+            width: 40px;
+            height: 40px;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            background: rgba(152, 206, 169, 1);
+        }
+
+        .part-3-2-main {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+        }
+
+
+
+
+        /* part-4  */
+        .part-4 {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            padding-bottom: 100px;
+        }
+
+        .part-4-1 {
+            width: 50%;
+            margin: 0;
+        }
+
+        .part-4-1 .comment {
+            color: lightgrey;
+        }
+
+        .part-4-1 button {
+            background-color: black;
+            color: white;
+            width: 120px;
+            height: 40px;
+            border: 2px solid transparent;
+            border-radius: 15px;
+            margin: 15px auto;
+        }
+
+        .part-4-2 {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 20px;
+        }
+
+
+
+        /* part-5  */
+        .part-5-main {
+            width: 100%;
+            margin: 0;
+            padding-bottom: 100px;
+        }
+
+        .part-5 {
+            display: flex;
+
+        }
+
+        .part-5-1 {
+            border: 2px solid transparent;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 0 10px;
+            background-color: #F7F7F7;
+            text-align: center;
+
+        }
+
+        .part-5-1 p {
+            font-size: 18px;
+        }
+
+        .part-5-1 button {
+            background-color: black;
+            color: white;
+            height: 40px;
+            width: 270px;
+            border: 2px solid transparent;
+            border-radius: 15px;
+
+        }
+
+        .part-5-2 {
+            background-color: #97CEA9;
+            text-align: center;
+            border: 2px solid transparent;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 0 10px;
+            width: 50%;
+        }
+
+        .part-5-2 button {
+            background-color: black;
+            color: white;
+            height: 40px;
+            width: 270px;
+            border: 2px solid transparent;
+            border-radius: 15px;
+
+        }
+
+        .part-5-3 {
+            background-color: #F7F7F7;
+            text-align: center;
+            border: 2px solid transparent;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 0 10px;
+            height: 250px;
+        }
+
+        .part-5-3 button {
+            background-color: black;
+            color: white;
+            height: 40px;
+            width: 270px;
+            border: 2px solid transparent;
+            border-radius: 15px;
+
+        }
+
+
+
+        /* for footer  */
+        .footer-main {
+            height: 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-footer {
+            position: absolute;
+            left: 900px;
+            top: -22px;
+            transform: rotate(25deg);
+        }
+
+        .footer-part-1 {
+            display: flex;
+            border: 2px solid black;
+            border-radius: 100px;
+            background-color: black;
+            height: 50px;
+            width: 22%;
+            margin: 25px 0;
+        }
+
+        .footer-part-1 h6 {
+            margin: 15px 3px;
+            font-size: 15px;
+            color: white;
+        }
+
+        .footer-part-1 p {
+            margin: 40px 8px;
+            font-size: 15px;
+        }
+
+        .footer-main {
+            display: flex;
+            background-color: #F7F7F7;
+            border: 2px solid transparent;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .main-footer-1 {
+            width: 50%;
+            display: flex;
+        }
+
+        .main-footer-1 p {
+            margin: 40px 12px;
+        }
+
+        .main-footer-2 {
+            width: 50%;
+            display: flex;
+            margin: 0 10px;
+            justify-content: end;
+        }
+
+        .main-footer-2 p {
+            margin: 40px 12px;
+        }
+
+
+
+        /* responsive  */
+        @media only screen and (max-width:600px) {
+            .nav-bar {
+                display: block;
+                text-align: center;
+            }
+
+            .navbar-part-1 {
+                width: 100%;
+            }
+
+            .part-1 {
+                display: block;
+            }
+
+            .part-1-1 {
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .navbar-part-2 {
+                display: block;
+                width: 100%;
+            }
+
+            .navbar-part-2 li {
+                margin-left: 10px;
+                margin-top: 10px;
+                justify-content: end;
+                list-style-type: none;
+            }
+
+            .part-1 {
+                display: block;
+            }
+
+            .part-1-2 {
+                width: 100%;
+
+                margin: 20px auto;
+            }
+
+            .image-1 {
+                height: 100%;
+                width: 100%;
+            }
+
+            .part-1-1 h1 {
+                font-size: 25px;
+            }
+
+            .part-1-1 p {
+                font-size: 14px;
+            }
+
+            .part-1-1 {
+                width: 100%;
+                margin: 0px;
+                text-align: center;
+            }
+
+            .part-2 {
+                width: 100%;
+                margin: 0;
+                padding: 25px 0px;
+            }
+
+            .part-2-1 {
+                display: block;
+            }
+
+            .part-2-2-1 {
+                width: 100%;
+                margin: 0;
+                text-align: center;
+            }
+
+            .part-2-2-1 h1 {
+                font-size: 25px;
+            }
+
+            .part-2-2-1 p {
+                font-size: 15px;
+            }
+
+            .part-2-2-2 {
+                width: 100%;
+                text-align: center;
+                padding: 0px;
+
+            }
+
+            .part-2-2 img {
+                width: 100%;
+                height: 175px;
+            }
+
+
+            .part-3-main {
+                display: block;
+            }
+
+            .part-3 h1 {
+                font-size: 25px;
+            }
+
+            .part-3-1 {
+                width: 100%;
+            }
+
+            .part-3-2 {
+                width: 100%;
+            }
+
+            .part-3-3 {
+                width: 100%;
+            }
+
+            .part-3-2-main {
+                display: block;
+            }
+
+            .part-3-2-main img {
+                height: 100%;
+                width: 100%;
+            }
+
+            .part-3-2-1 {
+                height: 100%;
+                width: 100%;
+            }
+
+            .part-4 {
+                display: block;
+                padding-bottom: 25px;
+            }
+
+            .part-4-1 {
+                margin: 0px;
+                width: 100%;
+            }
+
+            .part-4-1 h1 {
+                font-size: 25px;
+            }
+
+            .part-4-1 p {
+                font-size: 15px;
+            }
+
+            .part-4-2 {
+                margin-top: 10px;
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 5px;
+            }
+
+            .part-4-2 img {
+                height: 120px;
+                width: 120px;
+            }
+
+            .part-5 {
+                display: block;
+            }
+
+            .part-5-1 {
+                padding: 0px;
+                margin: 10px 0px;
+
+            }
+
+            .part-5-1 {
+                width: 100%;
+            }
+
+            .part-5-1 button {
+                width: 60%;
+                margin: 10px 0px;
+            }
+
+            .part-5-2 {
+                padding: 0px;
+                margin: 10px 0px;
+
+            }
+
+            .part-5-2 {
+                width: 100%;
+            }
+
+            .part-5-2 button {
+                width: 60%;
+                margin: 10px 0px;
+            }
+
+            .part-5-3 {
+                padding: 0px;
+                margin: 10px 0px;
+
+            }
+
+            .part-5-3 {
+                width: 100%;
+            }
+
+            .part-5-3 button {
+                width: 60%;
+                margin: 10px 0px;
+            }
+
+            .footer-main {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+
+            .main-footer-1 {
+                display: block;
+                margin: 0px auto;
+                width: 100%;
+            }
+
+            .footer-part-1 {
+                display: flex;
+                border: 2px solid black;
+                border-radius: 100px;
+                background-color: black;
+                height: 50px;
+                width: 97%;
+                margin: 25px 0;
+            }
+
+            .main-footer-2 {
+                width: 100%;
+                display: flex;
+                margin: 0px auto;
+                justify-content: center;
+            }
+
+            .main-footer-1 p {
+                margin: 20px 0px;
+            }
+
+            .main-footer-2 p {
+                margin: 3px 10px;
+            }
+        }
+
+
+
+        @media only screen and (min-width:601px) and (max-width:768px) {
+            .nav-bar {
+
+                text-align: center;
+            }
+
+            .navbar-part-1 {
+                width: 40%;
+            }
+
+            .part-1 {
+                display: block;
+            }
+
+            .part-1-1 {
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .navbar-part-2 {
+                /* display: block; */
+                width: 100%;
+            }
+
+            .navbar-part-2 li {
+                margin-left: 10px;
+                margin-top: 0px 10px;
+                justify-content: end;
+                list-style-type: none;
+            }
+
+            .part-1 {
+                display: block;
+            }
+
+            .part-1-2 {
+                width: 100%;
+
+                margin: 25px auto;
+            }
+
+            .image-1 {
+                height: 100%;
+                width: 100%;
+            }
+
+            .part-1-1 h1 {
+                font-size: 25px;
+            }
+
+            .part-1-1 p {
+                font-size: 14px;
+            }
+
+            .part-1-1 {
+                width: 100%;
+                margin: 0px;
+                text-align: center;
+            }
+
+            .part-2 {
+                padding: 0px;
+            }
+
+            .part-2-1 {
+                display: block;
+            }
+
+            .part-2-2-1 {
+                width: 100%;
+                margin: 0;
+                text-align: center;
+            }
+
+            .part-2-2-1 h1 {
+                font-size: 25px;
+            }
+
+            .part-2-2-1 p {
+                font-size: 15px;
+            }
+
+            .part-2-2-2 {
+                width: 100%;
+                text-align: center;
+                padding: 0px;
+
+            }
+
+            .part-2-2 img {
+                width: 100%;
+                height: 400px;
+            }
+
+
+            .part-3-main {
+                display: block;
+            }
+
+            .part-3 h1 {
+                font-size: 25px;
+            }
+
+            .part-3-1 {
+                width: 100%;
+            }
+
+            .part-3-2 {
+                width: 100%;
+            }
+
+            .part-3-3 {
+                width: 100%;
+            }
+
+            .part-3-2-main {
+                display: block;
+            }
+
+            .part-3-2-main img {
+                height: 100%;
+                width: 100%;
+            }
+
+            .part-3-2-1 {
+                height: 100%;
+                width: 100%;
+            }
+
+            .part-4 {
+                display: block;
+                padding-bottom: 20px;
+            }
+
+            .part-4-1 {
+                margin: 0px;
+                width: 100%;
+            }
+
+            .part-4-1 h1 {
+                font-size: 25px;
+            }
+
+            .part-4-1 p {
+                font-size: 15px;
+            }
+
+            .part-4-2 {
+                margin-top: 10px;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                gap: 5px;
+            }
+
+            .part-4-2 img {
+                height: 120px;
+                width: 120px;
+            }
+
+            .part-5 {
+                display: block;
+            }
+
+            .part-5-main {
+                width: 100%;
+                margin: 0;
+                padding-bottom: 40px;
+            }
+
+            .part-5-1 {
+                padding: 0px;
+                margin: 10px 0px;
+
+            }
+
+            .part-5-1 {
+                width: 100%;
+            }
+
+            .part-5-1 button {
+                width: 100%;
+                margin: 10px 0px;
+            }
+
+            .part-5-2 {
+                padding: 0px;
+                margin: 10px 0px;
+
+            }
+
+            .part-5-2 {
+                width: 100%;
+            }
+
+            .part-5-2 button {
+                width: 100%;
+                margin: 10px 0px;
+            }
+
+            .part-5-3 {
+                padding: 0px;
+                margin: 10px 0px;
+
+            }
+
+            .part-5-3 {
+                width: 100%;
+            }
+
+            .part-5-3 button {
+                width: 100%;
+                margin: 10px 0px;
+            }
+
+            .footer-main {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+
+            .main-footer-1 {
+                display: block;
+                margin: 0px auto;
+                width: 100%;
+            }
+
+            .footer-part-1 {
+                display: flex;
+                border: 2px solid black;
+                border-radius: 100px;
+                background-color: black;
+                height: 50px;
+                width: 20%;
+                margin: 25px 0;
+            }
+
+            .main-footer-2 {
+                width: 100%;
+                display: flex;
+                margin: 0px auto;
+                justify-content: center;
+            }
+
+            .main-footer-1 p {
+                margin: 20px 0px;
+            }
+
+            .main-footer-2 p {
+                margin: 3px 10px;
+            }
+
+        }
+
+
+        @media screen and (min-width:769px) and (max-width:1024px) {
+            .main {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .nav-bar {
+                width: 100%;
+                margin: 15px auto;
+                display: flex;
+                justify-content: space-between;
+
+            }
+
+            .navbar-part-1 {
+                display: flex;
+                border: 2px solid black;
+                border-radius: 100px;
+                background-color: black;
+                height: 50px;
+                width: 11%;
+                margin: 0;
+            }
+
+            .navbar-part-1 p {
+                margin: 16px 8px;
+                font-size: 15px;
+            }
+
+            .fa-arrow-pointer {
+                border: 2px solid black;
+                border-radius: 50%;
+                padding: 13px 20px;
+                height: 20px;
+                background-color: aliceblue;
+            }
+
+            .checkbox-1 {
+                height: 70px;
+                font-size: 35px;
+                color: aliceblue;
+            }
+
+            .navbar-part-2 {
+                display: flex;
+                width: 50%;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .navbar-part-2 li {
+                margin-left: 100px;
+                justify-content: end;
+                list-style-type: none;
+            }
+
+
+            /* for part-1  */
+            .part-1 {
+                display: flex;
+            }
+
+            .part-1-1 {
+                width: 45%;
+                margin: 0;
+                background-color: lightgrey;
+                padding: 10px 10px;
+                border: 2px solid transparent;
+                border-radius: 15px;
+
+            }
+
+            .part-1-1 h1 {
+                font-size: 60px;
+            }
+
+            .part-1-1 p {
+                font-size: 20px;
+            }
+
+            .part-1-1 button {
+                background-color: black;
+                color: white;
+                border: 2px solid transparent;
+                border-radius: 12px;
+                width: 120px;
+                height: 40px;
+                text-align: center;
+                margin: 20px auto;
+            }
+
+            .part-1-2 {
+                width: 50%;
+                margin: 0 auto;
+
+            }
+
+            .image-1 {
+                height: 500px;
+                width: 100%;
+            }
+
+
+            /* for part-2  */
+            .part-2 {
+                width: 100%;
+                margin: 0;
+                padding:0px;
+                /* position: relative; */
+                /* overflow: hidden; */
+            }
+
+            .image-2-2-2 {
+                position: absolute;
+                right: 200px;
+                top: -25px;
+                transform: rotate(25deg);
+            }
+
+            .part-2-1 {
+                display: flex;
+                padding: 20px 0px;
+                width: 100%;
+                margin: 0;
+            }
+
+            .part-2-2-1 {
+                width: 50%;
+                margin: 0;
+            }
+
+            .part-2-2-1 h1 {
+                font-size: 44px;
+            }
+
+            .part-2-2-1 p {
+                font-size: 20px;
+            }
+
+            .part-2-2-2 {
+                width: 50%;
+                margin: 0;
+                background-color: lightgrey;
+                border: 2px solid transparent;
+                border-radius: 15px;
+                padding: 35px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .part-2-2-2 .comment {
+                color: lightslategray;
+            }
+
+            .part-2-2 {
+                width: 100%;
+                margin: 0;
+            }
+
+
+
+            /* for part-3  */
+            .part-3 {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .part-3 h1 {
+                font-size: 44px;
+            }
+
+            .part-3-main {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .part-3-1 {
+                width: 33%;
+                margin: 0 auto;
+            }
+
+            .part-3 .round-1 {
+                width: 40px;
+                height: 40px;
+                border: 2px solid transparent;
+                border-radius: 50%;
+                background: rgba(133, 166, 231, 1);
+            }
+
+            .part-3-2 {
+                width: 33%;
+                margin: 0 auto;
+            }
+
+            .part-3 .round-2 {
+                width: 40px;
+                height: 40px;
+                border: 2px solid transparent;
+                border-radius: 50%;
+                background: rgba(239, 163, 131, 1);
+
+            }
+
+
+            .part-3-3 {
+                width: 33%;
+                margin: 0 auto;
+            }
+
+            .part-3 .round-3 {
+                width: 40px;
+                height: 40px;
+                border: 2px solid transparent;
+                border-radius: 50%;
+                background: rgba(152, 206, 169, 1);
+            }
+
+            .part-3-2-main {
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 10px;
+            }
+
+
+
+
+            /* part-4  */
+            .part-4 {
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                padding-bottom: 100px;
+            }
+
+            .part-4-1 {
+                width: 50%;
+                margin: 0;
+            }
+
+            .part-4-1 .comment {
+                color: lightgrey;
+            }
+
+            .part-4-1 button {
+                background-color: black;
+                color: white;
+                width: 120px;
+                height: 40px;
+                border: 2px solid transparent;
+                border-radius: 15px;
+                margin: 15px auto;
+            }
+
+            .part-4-2 {
+                margin-top: 10px;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                gap: 20px;
+            }
+
+
+
+            /* part-5  */
+            .part-5-main {
+                width: 100%;
+                margin: 0;
+                padding-bottom: 100px;
+            }
+
+            .part-5 {
+                display: flex;
+
+            }
+
+            .part-5-1 {
+                border: 2px solid transparent;
+                border-radius: 15px;
+                padding: 10px;
+                margin: 0 10px;
+                background-color: #F7F7F7;
+                text-align: center;
+
+            }
+
+            .part-5-1 p {
+                font-size: 18px;
+            }
+
+            .part-5-1 button {
+                background-color: black;
+                color: white;
+                height: 40px;
+                width: 270px;
+                border: 2px solid transparent;
+                border-radius: 15px;
+
+            }
+
+            .part-5-2 {
+                background-color: #97CEA9;
+                text-align: center;
+                border: 2px solid transparent;
+                border-radius: 15px;
+                padding: 10px;
+                margin: 0 10px;
+                width: 50%;
+            }
+
+            .part-5-2 button {
+                background-color: black;
+                color: white;
+                height: 40px;
+                width: 270px;
+                border: 2px solid transparent;
+                border-radius: 15px;
+
+            }
+
+            .part-5-3 {
+                background-color: #F7F7F7;
+                text-align: center;
+                border: 2px solid transparent;
+                border-radius: 15px;
+                padding: 10px;
+                margin: 0 10px;
+                height: 250px;
+            }
+
+            .part-5-3 button {
+                background-color: black;
+                color: white;
+                height: 40px;
+                width: 270px;
+                border: 2px solid transparent;
+                border-radius: 15px;
+
+            }
+
+
+
+            /* for footer  */
+            .footer-main {
+                height: 100px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .image-footer {
+                position: absolute;
+                left: 900px;
+                top: -22px;
+                transform: rotate(25deg);
+            }
+
+            .footer-part-1 {
+                display: flex;
+                border: 2px solid black;
+                border-radius: 100px;
+                background-color: black;
+                height: 50px;
+                width: 22%;
+                margin: 25px 0;
+            }
+
+            .footer-part-1 h6 {
+                margin: 15px 3px;
+                font-size: 15px;
+                color: white;
+            }
+
+            .footer-part-1 p {
+                margin: 40px 8px;
+                font-size: 15px;
+            }
+
+            .footer-main {
+                display: flex;
+                background-color: #F7F7F7;
+                border: 2px solid transparent;
+                border-radius: 15px;
+                text-align: center;
+            }
+
+            .main-footer-1 {
+                width: 50%;
+                display: flex;
+                align-content: center;
+            }
+
+            .main-footer-1 p {
+                margin: 40px 12px;
+            }
+
+            .main-footer-2 {
+                width: 50%;
+                display: flex;
+                margin: 0 10px;
+                justify-content: end;
+            }
+
+            .main-footer-2 p {
+                margin: 40px 12px;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- for nav-bar  -->
+        <div class="nav-bar">
+            <div class="navbar-part-1">
+                <i class="fa-solid fa-arrow-pointer"></i>
+                <div class="checkbox-1">
+                    <p>BizAppKit</p>
+                </div>
+            </div>
+            <div class="navbar-part-2">
+                <li onclick="A1()">How Does It Work</li>
+                <li>Apps Integration</li>
+                <li onmouseenter="pricing()">Pricing</li>
+            </div>
+        </div>
+
+        <!-- for part-1  -->
+        <div class="part-1">
+            <div class="part-1-1">
+                <img src="/web-2/_.png" alt="">
+                <h1>Create endless mobile and web solutions</h1>
+                <p>Set up data the same way as in Excel with unlimited data tables, use a library of widgets to display
+                    data, and use rules to define workflows within your app.</p>
+                <button type="submit">I want to try</button>
+            </div>
+            <div class="part-1-2">
+                <img class="image-1" src="/web-2/Photo.png" alt="">
+            </div>
+        </div>
+
+        <!-- for part-2  -->
+        <div class="part-2">
+            <div class="part-2-1">
+                <div class="part-2-2-1">
+                    <h1>Go from your idea to a real mobile app in few hours</h1>
+                    <p>You can make your app with just a few clicks! You can make it look however you want and let it
+                        work
+                        on phones and computers.</p>
+                </div>
+                <div class="part-2-2-2">
+                    <div class="image-2-2-2">
+                        <img class="" src="/web-2/_.png" alt="" height="100" width="100">
+                    </div>
+                    <h1>270+</h1>
+                    <p>Ready-made widgets and forms</p>
+                    <p class="comment">that you can you use to create your unique application</p>
+                </div>
+            </div>
+
+            <div class="part-2-2">
+                <img src="/web-2/Photo (1).png" alt="" width="1290" height="725">
+            </div>
+        </div>
+
+
+
+        <!-- for part-3  -->
+        <div class="part-3">
+            <h1>Why BizAppKit</h1>
+            <div class="part-3-main">
+                <div class="part-3-1">
+                    <div class="round-1"></div>
+                    <h3>It’s easy </h3>
+                    <p>BizAppKit is a platform that allows to create mobile and web apps with a visual interface and
+                        drag-and-drop tools without needing to write code. The platform also offers features such as
+                        user
+                        management, and integration with third-party services.</p>
+                </div>
+
+                <div class="part-3-2">
+                    <div class="round-2"></div>
+                    <h3>It’s easy </h3>
+                    <p>BizAppKit is a platform that allows to create mobile and web apps with a visual interface and
+                        drag-and-drop tools without needing to write code. The platform also offers features such as
+                        user
+                        management, and integration with third-party services.</p>
+                </div>
+
+                <div class="part-3-3">
+                    <div class="round-3"></div>
+                    <h3>It’s easy </h3>
+                    <p>BizAppKit is a platform that allows to create mobile and web apps with a visual interface and
+                        drag-and-drop tools without needing to write code. The platform also offers features such as
+                        user
+                        management, and integration with third-party services.</p>
+                </div>
+            </div>
+
+            <h1>How it works</h1>
+            <div class="part-3-2-main">
+                <div>
+                    <img src="/web-2/Left card (1).png" alt="" height="500" width="635">
+                </div>
+
+                <div>
+                    <img src="/web-2/Right card (1).png" alt="" height="500" width="635">
+                </div>
+
+                <div>
+                    <img src="/web-2/Left card.png" alt="" height="500" width="635">
+                </div>
+
+                <div>
+                    <img src="/web-2/Right card.png" alt="" height="500" width="635">
+                </div>
+            </div>
+        </div>
+
+        <!-- for part-4  -->
+        <div class="part-4">
+            <div class="part-4-1">
+                <h1>Automate your work</h1>
+                <p>Build automations with you favourite apps : Microsoft Teams Slack, Discord, Whatsapp, Twilio, Email &
+                    SMS.</p>
+                <p class="comment">You can connect apps that you need just in 3 clicks and use it for all your needs to
+                    manage your new
+                    application.</p>
+
+
+                <button type="submit">Get Started</button>
+            </div>
+
+            <div class="part-4-2">
+                <div>
+                    <img src="/web-2/Logo (9).png" alt="" height="145" width="145">
+                </div>
+                <div>
+                    <img src="/web-2/Logo (1).png" alt="" height="145" width="145">
+                </div>
+                <div>
+                    <img src="/web-2/Logo (3).png" alt="" height="145" width="145">
+                </div>
+                <div>
+                    <img src="/web-2/Logo (4).png" alt="" height="145" width="145">
+                </div>
+                <div>
+                    <img src="/web-2/Logo (5).png" alt="" height="145" width="145">
+                </div>
+                <div>
+                    <img src="/web-2/Logo (6).png" alt="" height="145" width="145">
+                </div>
+                <div>
+                    <img src="/web-2/Logo (7).png" alt="" height="145" width="145">
+                </div>
+                <div>
+                    <img src="/web-2/Logo (8).png" alt="" height="145" width="145">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- for part-5  -->
+        <div class="part-5-main">
+            <h1>Select your plan</h1>
+            <div class="part-5">
+                <div class="part-5-1">
+                    <h2>Demo</h2>
+                    <p>For teams who want to test the app on limited data. This is useful before you buy it.</p>
+                    <h4>Free</h4>
+                    <button type="submit">Get Started</button>
+                </div>
+
+                <div class="part-5-2">
+                    <h2>Starter</h2>
+                    <p>For teams who want to create and publish their own mobile app to App Store and Google Play
+                        (includes
+                        200 GB of data and 2 TB of media storage).</p>
+                    <h3><b>$120<b>/ month</h3>
+                    <button type="submit">Get Started</button>
+                </div>
+
+                <div class="part-5-3">
+                    <h2>Enterprise</h2>
+                    <p>For departments and organizations that need scalable, and customizable apps with exceptional
+                        functionality</p>
+                    <h3>Contact Us</h3>
+                    <button type="submit">Get Started</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- for footer  -->
+        <footer class="footer-main">
+            <img class="image-footer" src="/web-2/_.png" alt="" height="100" width="100">
+            <div class="main-footer-1">
+                <div class="footer-part-1">
+                    <i class="fa-solid fa-arrow-pointer"></i>
+                    <div class="checkbox-1">
+                        <h6>BizAppKit</h6>
+                    </div>
+                </div>
+                <p>© 2023. All right reserved. </p>
+            </div>
+
+            <div class="main-footer-2">
+                <p>Privacy Policy</p>
+                <p>Terms of use</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function pricing() {
+            alert("It is depend on you, you come at right site")
+        }
+        // function A1(){
+        //     onclick("https://www.youtube.com/watch?v=ZqFCn4Nia4o");
+        // }
+    </script>
+</body>
+
+</html>

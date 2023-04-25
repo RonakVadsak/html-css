@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <style>
+        .main-contain {
+            width: 65%;
+            display: flex;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 120px;
+        }
+
+        .sub-contain {
+            width: 35%;
+            font-size: 30px;
+            padding: 20px;
+            color:#2C576D;
+        }
+
+        .Img1 {
+            width: 70%;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        /* for input tag  */
+        .input1 {
+            margin-left: 3px;
+            font-size: 16px;
+            padding: 3px 11px;
+            border-color: gray;
+            width: 90%;
+            margin-top: 6px;
+            margin-bottom: 0px;
+            box-shadow: 7px 7px 3.5px #49778C;
+        }
+
+        /* for checkbox */
+        .cb {
+            margin-top: 19px;
+            margin-bottom: 2px;
+            font-size: 15px;
+
+        }
+
+        /* for button  */
+        .b1 {
+            text-align: center;
+            width: 47%;
+            margin: 10px auto;
+            display: block;
+            font-size: 16px;
+            padding: 5px;
+            border-radius: 20px;
+            background-color:#1F201C;
+            opacity: 0.7;
+            color: white;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-contain">
+
+        <img class="Img1" src="/Image/wallpaperA.jpeg" alt="Photos of apple" height="493" width="600">
+
+        <div class="sub-contain">
+            <form>
+                <div>
+                    <label for="Fname">First Name</label><br>
+                    <input class="input1" type="text" name="Fname" id="Fname" placeholder="Name"><br>
+                </div>
+
+                <div>
+                    <label for="user">User Name</label><br>
+                    <input class="input1" type="text" name="user" id="user" placeholder="user name"><br>
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label><br>
+                    <input class="input1" type="email" name="email" id="email" placeholder="@gmail.com"><br>
+                </div>
+
+                <div>
+                    <label for="password">Password</label><br>
+                    <input class="input1" type="password" name="password" id="password" placeholder="password"><br>
+                </div>
+
+                <div>
+                    <label for="rpassword">Re-Password</label><br>
+                    <input class="input1" type="password" name="rpassword" id="rpassword" placeholder="Re-Password"><br>
+                </div>
+
+                <div class="cb">
+                    <input type="checkbox" name="cb" id="cb">
+                    <label>I agree with condition</label>
+                </div>
+
+
+                <button class="b1" type="button" onclick="alert('Your Detail Will Be Submitted')">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

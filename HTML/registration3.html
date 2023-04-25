@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <style>
+
+        /* for main-contain */
+        body {
+            background-image: url("/Image/login\ wallpaper.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            width: 40%;
+            margin: 0 auto;
+        }
+        /* for sub-contain */
+        .Back1 {
+            border: 10px double black;
+            background-color: white;
+            opacity: 0.5;
+            padding: 20px;
+            margin-top: 38px;
+        }
+        /* for title */
+        .title {
+            color: black;
+            font-size: 25px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        /* for sub-contain */
+        .sub-contain {
+
+            color: black;
+            font-size: 25px;
+            width: 80%;
+            margin: 0 auto;
+        }
+        /* for label */
+        .sub-contain label {
+            text-align: left;
+        }
+        /* for button  */
+        .b1 {
+            width: 42%;
+            font-size: 20px;
+            padding: 13px;
+            margin: 10px auto;
+            display: block;
+            text-align: center;
+            background-color: #0a4747;
+            border-color: #0a4747;
+            color: #ffffff;
+        }
+        /* for input tag  */
+        input {
+            margin-left: 3px;
+            font-size: 16px;
+            padding: 10px 12px;
+            border-color: gray;
+            width: 90%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-contain">
+        <div class="Back1">
+            <div class="title">
+                <h1>Log In</h1>
+            </div>
+
+            <div class="sub-contain">
+                <label for="Fname">First Name</label><br>
+                <input type="text" name="Fname" id="Fname" placeholder="Name"><br>
+                <label for="Lname">Last Name</label><br>
+                <input type="text" name="Lname" id="Lname" placeholder="surname"><br>
+                <label for="email">E-mail</label><br>
+                <input type="email" name="email" id="email" placeholder="@gmail.com"><br>
+                <label for="user">User Name</label><br>
+                <input type="text" name="user" id="user" placeholder="user name"><br>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="password"><br>
+                <button class="b1" type="button" onclick="alert('Your Detail Will Be Submitted')">Submit</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+</html>

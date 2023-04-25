@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        /* for main div */
+        .main-contain {
+            width: 40%;
+            border: 3px solid black;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: grey;
+            font-size: 20px;
+        }
+        /* for title  */
+        .title {
+            text-align: left;
+            padding: 0 30px;
+            text-align: center;
+        }
+        /* div of first name and last name  */
+        .c1 {
+            display: flex;
+        }
+        /* for lastname */
+        .lname {
+            padding: 0 107px;
+        }
+        /* for email  */
+        .email1{
+            margin-top: 20px;
+        }
+        /* for birthday  */
+        .birthday1{
+            margin-top: 20px;
+        }
+        /* for gender */
+        .gender1{
+            margin-top: 20px;
+        }
+        /* for phone number */
+        .number1{
+            margin-top: 20px;
+        }
+        /* for password */
+        .password{
+            margin-top: 20px;
+        }
+        /* for button */
+        .button1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        input{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-contain">
+        <div class="title">
+            <h1>Registration form</h1>
+        </div>
+        <form>
+            <div class="c1">
+                <div>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" placeholder="name">
+                </div>
+                <div class="lname">
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" placeholder="surname">
+                </div>
+            </div>
+
+            <div class="email1">
+                <label for="email">E-MAIL</label><br>
+                <input type="email" id="email" placeholder="@gmail.com"><br>
+            </div>
+
+            <div class="birthday1">
+                <label for="birthday">Birthday</label><br>
+                <input type="date" id="birthday" min="2000-01-01"><br>
+            </div>
+
+            <div class="gender1">
+                <label for="gender">GENDER</label><br>
+                
+                <input type="radio" id="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="gender" value="Female">
+                <label for="female">Female</label>
+                <input type="radio" id="gender" value="Other">
+                <label for="Other">Other</label><br>
+                
+            </div>
+
+            <div class="number1">
+                <label for="mobile">Phone number</label><br>
+                <input type="tel" id="mobile" placeholder="12345-67890"><br>
+            </div>
+
+            <div class="password">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" placeholder="as per your wish" maxlength="8"><br>
+            </div>
+
+            <div class="button1">
+                <button type="button" onclick="alert('submitted')">submit</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

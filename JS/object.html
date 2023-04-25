@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a={
+            fname: "jay",
+            lname: "patel",
+            age:22,
+
+            fullname: function(){
+                return a.fname+" "+a.lname+" "+a.age;
+            }
+        }
+        document.write(a.fullname());
+
+
+
+        // second method 
+        var person=new Object(); /*person is variable and object name also by that you can call the object and get output*/
+
+        person.firstname='ram';
+        person.lastname='RAM';
+        person.age=20;
+
+        document.write(person['firstname']);
+    </script>
+</body>
+</html>

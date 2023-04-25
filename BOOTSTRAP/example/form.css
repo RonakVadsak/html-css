@@ -1,0 +1,20 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#main-form {
+  margin: 0px;
+  width: 100%;
+}
+#main-form form {
+  margin: 100px auto;
+  width: 50%;
+}
+#main-form input {
+  height: 50px !important;
+}
+#main-form button {
+  background-color: #085ED6 !important;
+  height: 50px !important;
+}/*# sourceMappingURL=form.css.map */

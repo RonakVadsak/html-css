@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .t1{
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            border:3px solid black;  
+            font-size:30px;  
+            color: green;
+            text-align: center;
+        }
+        .table1{
+            border:  4px outset bisque;
+            width: 60%;
+            margin-top: 50px;
+            /* margin-left:250px; 
+            margin-right: 90px; */
+            margin: 0 auto;
+            border-spacing: 8px;
+        }
+        th{
+            font-size: 30px;
+            border:  4px solid black; 
+            text-align: center;
+            padding:10px; 
+            outline: 3px outset antiquewhite; /*for outside border: ; */
+            outline-offset: 3px; /* space for outline border and main border*/
+            
+        }
+        td{
+            background-color: green;
+            font-size: 30px;
+            border: 4px solid black;
+            text-align: center;
+            padding: 10px;
+            outline: 3px outset antiquewhite;
+            outline-offset: 3px;
+            
+        }
+        th:hover{ 
+            color: blue;
+        }
+        td:hover{
+            color: rgb(244, 244, 248);
+        }
+    </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="icon" type="image/x-icon" href="/Image/calculator.png">
+
+</head>
+<body>
+    <div>
+        <h4 class="t1">Geeks for Geeks Calculator</h4>
+        <table class="table1">
+            <tr>
+                <th colspan="3" style="border: 4px solid black;"></th>
+                <th style="background-color:green; border: 4px solid black;">c</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>/</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>+</td>
+            </tr>
+            <tr>
+                <td>.</td>
+                <td>0</td>
+                <td>=</td>
+                <td>*</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
