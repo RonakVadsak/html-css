@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Number Method 
+        document.write("<h1>1.Number Method</h1>");
+        var a="90";
+        var num=Number(a);
+        document.write(num+10);
+
+        // parseInt Method 
+        document.write("<h1>2.parseInt Method</h1>");
+        var a="90 year";
+        var b="10.33";
+        var num1=parseInt(a);
+        var num2=parseInt(b)
+        document.write(num1+"<br>"+num2);
+
+        // parseFloat Method 
+        document.write("<h1>3.parseFloat Method</h1>");
+        var a="90.33";
+        var num=parseFloat(a);
+        document.write(num);
+
+        // isFinite Method 
+        document.write("<h1>4.isFinite Method</h1>");
+        var a=90;
+        var num=Number.isFinite(a);
+        document.write(num);
+
+        // isInteger Method 
+        document.write("<h1>5.isInteger Method</h1>");
+        var a=10.50;
+        var num=Number.isInteger(a);
+        document.write(num);
+
+        // toFixed Method 
+        document.write("<h1>6.toFixed Method</h1>");
+        var a=7.456754;
+        var num=a.toFixed(2);
+        document.write(num);
+
+        // toPrecision Method 
+        document.write("<h1>6.toPrecision Method</h1>");
+        var a=10.49;
+        var b=10.50;
+        var num1=a.toPrecision(2);
+        var num2=b.toPrecision(2);
+        document.write(num1 +"<br>"+num2);
+    </script>
+</body>
+</html>

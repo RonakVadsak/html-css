@@ -118,6 +118,57 @@
         var a = String.fromCharCode(65);
         document.write(a);
 
+        // for concat()
+        document.write("<h1>14.concat</h1>");
+        var str = "java script is a great language";
+        var str2= "hello";
+        var str3="world";
+        var a = str.concat(str2,str3);
+        document.write(a +"<br>");
+
+        // for split()
+        document.write("<h1>15.split</h1>");
+        var str = "java script is a great language";
+        var a = str.split("i");
+        document.write(a);
+
+        // for repeat()
+        document.write("<h1>16.repeat</h1>");
+        var str = "java script is a great language";
+        var a = str.repeat("3");
+        document.write(a ,"<br>");
+
+        // for slice()
+        document.write("<h1>17.slice</h1>");
+        var str = "java script is a great language";
+        var a = str.slice(3,7); /* 3 is starting indext and 7 is last */
+        document.write(a);
+
+        // for substr()
+        document.write("<h1>18.substr</h1>");
+        var str = "java script is a great language";
+        var a = str.substr(2,8); /* 2 is starting indext and 8 is last */
+        document.write(a);
+
+        // for substring()
+        document.write("<h1>19.substring</h1>");
+        var str = "java script is a great language";
+        var a = str.substring(2,5); /* 2 is starting indext and 5 is last */
+        document.write(a);
+
+        // for toString()
+        document.write("<h1>20.toString</h1>");
+        var str =50;
+        var a=str.toString();
+        document.write(a + 40);
+
+
+        // for valueOf()
+        document.write("<h1>21.valueOf</h1>");
+        var str ="javascript is a best"
+        var a=str.valueOf();
+        document.write(a);
+        
     </script>
 </body>
 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #header {
+            background-color: aquamarine;
+            text-align: center;
+        }
+
+        .abc {
+            font-size: 150px;
+            background-color: black;
+            color: antiquewhite;
+        }
+
+        .xyz {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="main-contain">
+            <h1 id="header">TITLE</h1>
+            <p id="paragraph" class="xyz">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsum ipsam culpa cum ullam adipisci
+                accusamus quas necessitatibus debitis, officiis consequatur hic dicta quaerat, consequuntur natus animi
+                omnis ipsa modi voluptatem eaque iste. Quis nostrum blanditiis praesentium ab ipsa sapiente soluta quia
+                commodi sequi, ea, autem unde dolor quidem quasi fugit numquam quo expedita, ut molestias? Ratione
+                provident soluta quisquam officia voluptatibus temporibus magni maxime nostrum nam minima et atque
+                libero, dolor enim id quis illum esse ab officiis repellendus omnis obcaecati veniam voluptatem
+                doloribus. Asperiores fugit blanditiis sunt maiores, dicta ex, ea pariatur quis quisquam molestias rem
+                id nemo.
+            </p>
+
+        </div>
+    </div>
+
+    <script>
+        //add(class1,class2,....)
+        // use for add new class 
+        document.getElementById("header").classList.add("abc");
+
+        //remove(class1,class2,....)
+        // use for remove class 
+        document.getElementById("paragraph").classList.remove("xyz");
+
+        //length
+        //use for getting length of id
+        document.getElementById("paragraph").classList.length;
+
+        //toggle(class)
+        //when you want to get one class by inly clicking that's time it's useful
+        //use with function only
+        document.getElementById("header").addEventListener("click", abc);
+        function abc() {
+            document.getElementById("header").classList.toggle("abc");
+        }
+
+        //item index
+        //by using item(index), you can get class name by entering index. 
+        document.getElementById("header").addEventListener("click", abc);
+        function abc() {
+            document.getElementById("header").classList.item(0);
+        }
+
+        //contains(class)
+        // you will get only true or false by checking class is avaible or not
+        document.getElementById("header").addEventListener("click", abc);
+        function abc() {
+            document.getElementById("header").classList.contains(0);
+        }
+    </script>
+</body>
+
+</html>
